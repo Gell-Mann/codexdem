@@ -1,0 +1,58 @@
+Input: mix1.root / Graph1D_y1
+chi2: y errors from Graph1D_y1
+N(stat points) = 11
+
+=== fixed_Nor ===
+Nor = 1.1885 +NaN -1.1168368  (profile)
+q   = 1.0796945 +0.0045555221 -0.0045753339  (MINOS)
+T   = 0.18154693 +0.0059068339 -0.0059955161  (MINOS)
+chi2_stat = 12.124049
+ndf = 9
+chi2_stat/ndf = 1.3471165
+warning: chi2_min + 1 crossing was not found on at least one side.
+
+=== fixed_q ===
+Nor = 1.1933248 +1.317056 -0.59872977  (MINOS)
+q   = 1.07972 +0.023244335 -0.023588007  (profile)
+T   = 0.18143301 +0.014691191 -0.014426862  (MINOS)
+chi2_stat = 12.12405
+ndf = 9
+chi2_stat/ndf = 1.3471166
+
+=== fixed_T ===
+Nor = 1.1862528 +0.27551055 -0.2296294  (MINOS)
+q   = 1.0796827 +0.0032866292 -0.0033045704  (MINOS)
+T   = 0.1816 +0.10454011 -0.10225943  (profile)
+chi2_stat = 12.124049
+ndf = 9
+chi2_stat/ndf = 1.3471166
+
+=== qT 2D profile contour ===
+fixed axes: q, T; fitted parameter: Nor
+errors: Delta chi2_stat = 1 profile-contour projection
+Nor = 1.0761986 +352.75325 -1.0042453
+q   = 1.0789916 +0.023555874 -0.022550049
+T   = 0.18445378 +0.10117365 -0.104069
+chi2_stat = 12.125098
+ndf = 10
+chi2_stat/ndf = 1.2125098
+
+=== Nor_q 2D profile contour ===
+fixed axes: Nor, q; fitted parameter: T
+errors: Delta chi2_stat = 1 profile-contour projection
+Nor = 1.2147059 +3.7852941 -1.1280109
+q   = 1.079916 +0.011687573 -0.023042548
+T   = 0.18082857 +0.097588761 -0.039314527
+chi2_stat = 12.124439
+ndf = 10
+chi2_stat/ndf = 1.2124439
+
+=== Nor_T 2D profile contour ===
+fixed axes: Nor, T; fitted parameter: q
+errors: Delta chi2_stat = 1 profile-contour projection
+Nor = 1.2147059 +3.7852941 -1.1240089
+q   = 1.0797144 +0.011617562 -0.022595973
+T   = 0.18109244 +0.096653715 -0.039514625
+chi2_stat = 12.124776
+ndf = 10
+chi2_stat/ndf = 1.2124776

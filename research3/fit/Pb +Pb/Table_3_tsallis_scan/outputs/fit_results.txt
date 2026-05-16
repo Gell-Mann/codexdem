@@ -1,0 +1,57 @@
+Input: Table 3 / Graph1D_y1
+chi2: statistical errors from Hist1D_y1_e1
+N(stat points) = 13
+
+=== fixed_Nor ===
+Nor = 0.011547 +0.1142511 -0.0089062071  (profile)
+q   = 1.1111344 +0.0084094165 -0.0082475823  (MINOS)
+T   = 0.24617205 +0.0077009742 -0.0078252507  (MINOS)
+chi2_stat = 5.2278342
+ndf = 11
+chi2_stat/ndf = 0.47525766
+
+=== fixed_q ===
+Nor = 0.011589742 +0.0064465383 -0.0040236  (MINOS)
+q   = 1.1112 +0.034444222 -0.034550263  (profile)
+T   = 0.24596289 +0.018159002 -0.017332859  (MINOS)
+chi2_stat = 5.2278252
+ndf = 11
+chi2_stat/ndf = 0.47525684
+
+=== fixed_T ===
+Nor = 0.011638144 +0.0016566285 -0.0014880296  (MINOS)
+q   = 1.1112819 +0.0059896903 -0.0058409197  (MINOS)
+T   = 0.24572 +0.10548117 -0.10158801  (profile)
+chi2_stat = 5.2278248
+ndf = 11
+chi2_stat/ndf = 0.4752568
+
+=== qT 2D profile contour ===
+fixed axes: q, T; fitted parameter: Nor
+errors: Delta chi2_stat = 1 profile-contour projection
+Nor = 0.012420565 +0.11327684 -0.009780461
+q   = 1.1121008 +0.033572725 -0.03541278
+T   = 0.24235294 +0.10870116 -0.098070752
+chi2_stat = 5.2313362
+ndf = 12
+chi2_stat/ndf = 0.43594468
+
+=== Nor_q 2D profile contour ===
+fixed axes: Nor, q; fitted parameter: T
+errors: Delta chi2_stat = 1 profile-contour projection
+Nor = 0.011033613 +0.11497196 -0.0083646075
+q   = 1.1104202 +0.03522584 -0.033504687
+T   = 0.24867527 +0.10234259 -0.10446223
+chi2_stat = 5.2289179
+ndf = 12
+chi2_stat/ndf = 0.43574316
+
+=== Nor_T 2D profile contour ===
+fixed axes: Nor, T; fitted parameter: q
+errors: Delta chi2_stat = 1 profile-contour projection
+Nor = 0.011033613 +0.11141188 -0.0083619499
+q   = 1.1096523 +0.036022523 -0.032641312
+T   = 0.24941176 +0.1016181 -0.10399544
+chi2_stat = 5.2347882
+ndf = 12
+chi2_stat/ndf = 0.43623235
