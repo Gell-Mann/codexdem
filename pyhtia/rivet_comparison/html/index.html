@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Plots from Rivet analyses</title>
+<style>
+      html { font-family: sans-serif; }
+      img { border: 0; }
+      a { text-decoration: none; font-weight: bold; }
+    </style>
+            <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [["$","$"]]}
+        });
+        </script>
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        
+
+        <script type="text/javascript">
+            function filterPlots(ana, patt) {
+                var regex = new RegExp(patt);
+                var sec = document.getElementById('ana_'+ana);
+                var plots = sec.getElementsByClassName('plot');
+                var i; for (i = 0; i < plots.length; ++i) {
+                    // var viz = (regex.test(plots[i].id)) ? 'visible' : 'hidden';
+                    // plots[i].style.visibility = viz;
+                    var dis = (regex.test(plots[i].id)) ? 'block' : 'none';
+                    plots[i].style.display = dis;
+                }
+                return false;
+           }
+        </script>
+        </head>
+<body><h2>Plots from Rivet analyses</h2>
+
+
+<h3><a href="STAR_2008_S7869363/index.html" style="text-decoration:none;">Multiplicities and pT spectra from STAR for $pp$ at 200 GeV (STAR_2008_S7869363)</a></h3>
+<p><a href="https://inspirehep.net/literature?q=7869363">Inspire</a> &#124; <a href="http://hepdata.cedar.ac.uk/view/irn7869363">HepData</a> &#124; <a href="https://rivet.hepforge.org/analyses/STAR_2008_S7869363.html">Analysis reference</a> &#124; <a href="https://arxiv.org/abs/0808.2041">arXiv:0808.2041</a> &#124; http://drupal.star.bnl.gov/STAR/files/starpublications/124/data.html</p>
+<p style="font-size:smaller;">Charged multiplicity and identified charged particle spectra</p>
+<footer style="clear:both; margin-top:3em; padding-top:3em">
+<p>Generated at Monday, 18. May 2026 11:18AM</p>
+<p>Created with command: <pre>rivet-mkhtml rivet_comparison/star_2008_vs_jpsi_pythia.yoda --outputdir rivet_comparison/html</pre></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+! Optional user-editable Pythia8 settings for pp -> J/psi + X at sqrt(s)=200 GeV.
+! The C++ driver sets beams, random seed, and output handling.
+
+! Direct charmonium production matrix elements.
+Charmonium:all = on
+
+! Keep J/psi stable in the event record so it can be written to HepMC and
+! histogrammed directly as PDG 443.
+443:mayDecay = off
+
+! A small pTHat cut avoids spending all statistics in the very soft region.
+! Change or remove this line depending on the analysis goal.
+PhaseSpace:pTHatMin = 0.0
+
