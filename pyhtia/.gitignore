@@ -1,4 +1,2 @@
-simulate_jpsi_200gev
-*.hepmc
 *.root
-*.o
+*.hepmc

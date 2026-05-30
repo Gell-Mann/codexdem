@@ -1,2 +1,2 @@
-.codexdem.git/
-git-meta/
+*.root
+*.hepmc
