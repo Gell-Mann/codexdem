@@ -1,0 +1,140 @@
+\documentclass[onecolumn]{revtex4}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{soul} % for highlight  \hl{...}
+
+\usepackage[usenames,dvipsnames]{color}
+
+\definecolor{darkred}{RGB}{0,0,196}
+%\usepackage[colorlinks=true,linkcolor=darkred,citecolor=darkred,urlcolor=darkred]{hyperref}
+% Adding or removing % in the last \usepackage can change the styles of refs
+
+\renewcommand\baselinestretch{1.265} %1.265
+% When the line spacing and figure size are not appropriate
+% and result in compilation failure, they can be modified
+
+\begin{document}
+
+\title{Extraction of Effective Temperatures from Tsallis Fits to
+Transverse-Momentum Spectra of Direct Photons and Heavy Quarkonia in
+High-Energy Collisions} \vspace{0.5cm}
+
+\author{Peng-Cheng~Zhang$^{1,}$\footnote{202312602003@email.sxu.edu.cn},
+Hailong~Zhu$^{1,}$\footnote{Correspondence: zhuhl@sxu.edu.cn} and
+Fu-Hu~Liu$^{1,}$\footnote{Correspondence: fuhuliu@163.com;
+fuhuliu@sxu.edu.cn}}
+
+\affiliation{$^1$Institute of Theoretical Physics \& College of
+Physics and Electronic Engineering, State Key Laboratory of
+Quantum Optics Technologies and Devices \& Collaborative
+Innovation Center of Extreme Optics, Shanxi University, Taiyuan
+030006, China}
+
+\begin{abstract}
+
+\vspace{0.5cm}
+
+\noindent {\bf Abstract:} 
+\\
+\\
+{\bf Keywords:} Tsallis statistics; effective temperature
+\\
+\\
+{\bf PACS numbers:}
+\\
+\end{abstract}
+
+%\date{\today}
+\maketitle
+
+\parindent=15pt
+
+
+\section{Results and Discussion}
+
+A central feature of the nonprompt direct-photon spectra~\cite{PHENIX2024} 
+is that they are not described by a single
+exponential: the local inverse slope rises with transverse momentum, and
+the data were accordingly characterized by two separate exponential fits,
+yielding $T_{\rm eff} \approx 0.26$~GeV/$c$ in the range $0.8 < p_T < 1.9$~GeV/$c$
+and $T_{\rm eff} \approx 0.38$~GeV/$c$ in $2 < p_T < 4$~GeV/$c$. The present
+analysis shows that this evolving slope is captured naturally, and without
+piecewise treatment, by a single Tsallis form fitted over
+the full momentum range.
+
+The equivalence follows directly from the structure of the Tsallis
+function. For $dN/dp_T \propto p_T\,[1+(q-1)\,p_T/T]^{q/(1-q)}$, the local
+inverse slope is not constant but a smooth, monotonically increasing
+function of $p_T$,
+\begin{equation}
+    T_{\rm eff}(p_T) \equiv
+    -\left(\frac{d\ln(dN/dp_T)}{dp_T}\right)^{-1},
+\end{equation}
+which reduces to the constant $T$ only in the Boltzmann limit $q\to 1$. A
+value $q>1$ therefore encodes precisely the spectral hardening that the
+two-exponential description represents through a discrete jump in
+$T_{\rm eff}$. The single parameter $q$ thus subsumes the two independent
+slopes of the piecewise fit. %这段添加到第二节公式里
+
+This is borne out quantitatively. Evaluating $T_{\rm eff}(p_T)$ for the
+0\%--20\% best-fit parameters ($q = 1.084$, $T = 0.128$~GeV) gives
+$T_{\rm eff} \approx 0.26$~GeV/$c$ near $p_T = 1.3$~GeV/$c$ and
+$T_{\rm eff} \approx 0.40$~GeV/$c$ near $p_T = 3$~GeV/$c$, in close
+agreement with the two inverse slopes extracted independently~\cite{PHENIX2024} for the corresponding $p_T$ intervals. The two
+regimes are recovered not as separate fits but as the low- and high-$p_T$
+limits of one continuous curve.
+
+The Tsallis description is therefore both more economical and more
+physically suggestive. It replaces two phenomenological slopes by a single
+functional form with one shape parameter $q$, and it admits a transparent
+interpretation within superstatistics: a Tsallis spectrum arises from a
+superposition of Boltzmann emitters with a distribution of inverse
+temperatures $\beta$, with $q-1 \simeq \mathrm{Var}(\beta)/\langle\beta\rangle^2$.
+The hardening described piecewise by two slopes is thus reframed as a
+single spectrum emitted by a system spanning a range of temperatures---a
+picture consistent with photon emission integrated over the cooling history
+of the expanding fireball.
+
+
+\begin{figure*}[htb!]
+\begin{center}
+\includegraphics[width=15.5cm]{/home/weyl/codexdem/Au+Au/nonprompt/cenm1_nonprompt.pdf}
+\end{center}
+\justifying\noindent {Figure 1a. Nonprompt direct-photon spectra in Au$+$Au collisions at
+    $\sqrt{s_{NN}}=200$~GeV for the four centrality classes, with the Tsallis fits
+    (curves) evaluated at the best-fit $(q,T,\mathrm{Nor})$ values.}
+\end{figure*}
+
+
+
+
+\begin{figure*}[htb!]
+\begin{center}
+\includegraphics[width=15.5cm]{/home/weyl/codexdem/Au+Au/nonprompt/qt_contours_err_figure16_0_10.pdf}
+\end{center}
+\justifying\noindent {Figure 1d. Tsallis-fit confidence regions in the $(q, T)$ plane for 
+    four centrality classes. Closed curves show the 68.3\% joint confidence 
+    region ($\Delta\chi^2=2.30$); filled circes mark the best fits, with bars 
+    giving single-parameter $1\sigma$ errors ($\Delta\chi^2=1$).}
+\end{figure*}
+
+
+
+{\small
+\begin{thebibliography}{99}
+
+\setlength{\itemsep}{2pt}
+
+\bibitem{PHENIX2024}%[1]
+N. J. Abdulameer {\it et al.} (PHENIX Collaboration), ``Nonprompt
+direct-photon production in Au$+$Au collisions at $\sqrt{s_{NN}}=200$~GeV,"
+{\it Physical Review C} 109, no. 4 (2024): 044912,
+https://doi.org/10.1103/PhysRevC.109.044912.
+
+
+\end{thebibliography}}
+
+
+\end{document}

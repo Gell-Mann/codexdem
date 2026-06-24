@@ -1,0 +1,35 @@
+Parameter table for tsa1-tsa4
+Fit range: 0 <= pT <= 10 GeV
+Error definition: central values from the full fit; each parameter error from a refit with the other two parameters fixed at the full-fit values.
+
+tsa1
+Nor = 15.124 +/- 2.53703
+q   = 1.11635 +/- 0.00410003
+T   = 0.094939 +/- 0.00233451
+chi2   = 1.52634
+chi2st = 10.4851
+ndf    = 10
+
+tsa2
+Nor = 12 +/- 6.09797
+q   = 1.117 +/- 0.00394197
+T   = 0.0863086 +/- 0.00210574
+chi2   = 1.59456
+chi2st = 12.1516
+ndf    = 10
+
+tsa3
+Nor = 5.69151 +/- 0.980394
+q   = 1.118 +/- 0.00374853
+T   = 0.0814512 +/- 0.00202361
+chi2   = 0.960672
+chi2st = 8.82473
+ndf    = 10
+
+tsa4
+Nor = 1.52594 +/- 0.283023
+q   = 1.12273 +/- 0.00395837
+T   = 0.073 +/- 0.00195275
+chi2   = 2.59837
+chi2st = 23.874
+ndf    = 10

@@ -12,3 +12,17 @@ This repository is for high-energy / nuclear physics analysis involving:
 A task is done only when:
 1. the requested code or analysis change is completed;
 2. output files, figures, or tables are named explicitly if produced.
+
+
+# Global Codex Rules for HEP Work
+
+## Token economy
+- Do not paste or summarize large files unless explicitly asked.
+- Do not read data files, log files in full unless necessary.
+
+## Scientific integrity
+- Never invent numerical results, cross sections, fit parameters, detector resolutions, or physics conclusions.
+- Always distinguish: code behavior, numerical result, physical interpretation, and speculation.
+
+## Output format
+- For code changes: summarize changed files, commands run, and remaining risks.
